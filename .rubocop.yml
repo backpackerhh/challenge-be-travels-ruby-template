@@ -1,0 +1,27 @@
+require:
+  - rubocop-rspec
+
+# Style
+
+Style/Documentation:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+# Metrics
+
+Metrics/MethodLength:
+  Enabled: true
+  CountAsOne: ["array", "heredoc", "method_call"]
+  Exclude:
+    - spec/itinerary_parser_spec.rb
+
+# Tests
+
+RSpec/ExampleLength:
+  Enabled: true
+  CountAsOne: ["array", "heredoc", "method_call"]
